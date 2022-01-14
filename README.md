@@ -71,6 +71,9 @@ python3 manage.py runserver
   
 </details>
 
+![image](https://user-images.githubusercontent.com/55447090/149549917-afdd8a9c-456a-4586-aea7-d05aa5d1f539.png)
+
+
 ### 1.2 register POST
 
  ``` diff 
@@ -98,6 +101,9 @@ python3 manage.py runserver
   }
   ```
  
+ ![image](https://user-images.githubusercontent.com/55447090/149550069-702f0691-cb23-4d70-8794-3c1985a5f01a.png)
+
+ 
 
 ### 1.3 login POST
 
@@ -118,6 +124,9 @@ python3 manage.py runserver
       "token": "eb7c0e9789f2166697bcc6b43ab8deb447acddf3"
   }
   ```
+  
+  ![image](https://user-images.githubusercontent.com/55447090/149550115-99ba3d8d-1e42-415c-b2d3-e8e8ae81da65.png)
+
   
 <br>
 
@@ -152,6 +161,9 @@ python3 manage.py runserver
     ]
   ```
 
+![image](https://user-images.githubusercontent.com/55447090/149550177-4d05ba46-559d-42e8-ac43-fc4c2f8be321.png)
+
+
 ### 2.2 add product POST
 
  ``` diff 
@@ -175,6 +187,10 @@ python3 manage.py runserver
       "seller": 2
   }
   ```
+  
+  ![image](https://user-images.githubusercontent.com/55447090/149550238-6a1ea0c0-1c37-4a92-9a9c-156bfd1b6228.png)
+
+  
 
 ### 2.3 get product by seller GET
 
@@ -211,6 +227,9 @@ python3 manage.py runserver
   ]
   ```
   
+  ![image](https://user-images.githubusercontent.com/55447090/149550303-9dbb9e54-d610-4f2d-a7e5-dfc059773f4d.png)
+
+  
 ### 2.4 get your product GET
 
  ``` diff 
@@ -246,5 +265,8 @@ python3 manage.py runserver
       }
   ]
   ```
+  
+  ![image](https://user-images.githubusercontent.com/55447090/149550348-90ce4bdb-9a15-4908-b753-78fb18a9b7f7.png)
+
 
 
