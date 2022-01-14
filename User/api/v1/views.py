@@ -6,7 +6,7 @@ from User.models import User
 from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view
 from Product.api.v1.serializers import ProductSerializer
-
+from Product.models import Product
 
 class UserViewSet(ModelViewSet):
     serializer_class = UsersSerializer
