@@ -1,26 +1,32 @@
 # Bit68
 > 1. Python Requirements
-## 1- clone this repo
-## 2- cd into repo root folder
-## 3- pip install -r requirements.txt
++ 1- clone this repo
++ 2- cd into repo root folder
++ 3- pip install -r requirements.txt
 
 <hr/>
 
 > 2. Database Requirements
-## 1- create new database with the following credential 
-            'NAME': 'Bit68',
-            'HOST': "localhost",
-            'USER': 'postgres',
-            'PASSWORD': '691999',
-            'PORT': '5432'
++ 1- create new database with the following credential 
+```json
+    {
+        "NAME": "Bit68",
+        "HOST": "localhost",
+        "USER": "postgres",
+        "PASSWORD": "691999",
+        "PORT": 5432,
+        
+    }
+```
+
 <hr/>
 
 > 3. Migration Requirements
-## 1- start postgres service by run this 
++ 1- start postgres service by run this 
       service postgres start 
-## 2- cd into repo root folder
-## 3- active you venv (if you have)
-## 4- run this commands 
++ 2- cd into repo root folder
++ 3- active you venv (if you have)
++ 4- run this commands 
     python3 manage.py makemigrations
     python3 manage.py migrate
     python3 manage.py runserver
