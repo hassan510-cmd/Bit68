@@ -1,17 +1,21 @@
 # Bit68
-> Python Requirements
+> 1. Python Requirements
 ## 1- clone this repo
 ## 2- cd into repo root folder
 ## 3- pip install -r requirements.txt
 
-> Database Requirements
+<hr/>
+
+> 2. Database Requirements
 ## 1- create new database with the following credential 
             'NAME': 'Bit68',
             'HOST': "localhost",
             'USER': 'postgres',
             'PASSWORD': '691999',
             'PORT': '5432'
-> Migration Requirements
+<hr/>
+
+> 3. Migration Requirements
 ## 1- start postgres service by run this 
       service postgres start 
 ## 2- cd into repo root folder
@@ -19,13 +23,15 @@
 ## 4- run this commands 
     python3 manage.py makemigrations
     python3 manage.py migrate
+    python3 manage.py runserver
+    
 <hr/>
 
 # Endpoints
 
-## Seller
+## 1. Seller
 
-### get all users GET
+### 1.1 get all users GET
 
 ```diff
 + http://127.0.0.1:8000/user/register/
@@ -56,7 +62,7 @@
 ]
 ```
 
-### register POST
+### 1.2 register POST
 
 ```diff
 ! http://127.0.0.1:8000/user/register/
@@ -84,7 +90,7 @@
 ```
 
 
-### login POST
+### 1.3 login POST
 
 ```diff
 ! http://127.0.0.1:8000/user/login
@@ -103,10 +109,11 @@
     "token": "eb7c0e9789f2166697bcc6b43ab8deb447acddf3"
 }
 ```
+<hr/>
 
-## Product
+## 2. Product
 
-### get all products GET
+### 2.1 get all products GET
 
 ```diff
 + http://127.0.0.1:8000/product/list/
@@ -135,7 +142,7 @@
 ]
 ```
 
-### add product POST
+### 2.2 add product POST
 
 ```diff
 ! http://127.0.0.1:8000/product/list/
@@ -159,7 +166,7 @@
 }
 ```
 
-### get product by seller GET
+### 2.3 get product by seller GET
 
 ```diff
 + http://127.0.0.1:8000/product/list/?search=admin
@@ -193,7 +200,7 @@
     }
 ]
 ```
-### get your product GET
+### 2.4 get your product GET
 
 ```diff
 + http://127.0.0.1:8000/user/my-product/
